@@ -21,7 +21,7 @@ jobs:
           url: https://sda.preview.cb-demos.io/westest/
           username: ${{ secrets.WES_JENKINS_USERNAME }}
           token: ${{ secrets.WES_JENKINS_TOKEN }}
-          job-name: WesTestJob
+          job-name: WesTestJob3
       - name: Run GHA Workflow
         kind: test
         uses: cloudbees-io/ghactions-run-workflow@v2
@@ -29,7 +29,7 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
           org-name: cloudbees-days
-          repo-name: hackers-Wes4
+          repo-name: hackers-Wes11
           branch-name: main
           workflow-name: test-and-build-image2
           test-type: JUnit
